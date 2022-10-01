@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --color-primary: #00aed6;
+    --color-secondary: #ccecff;
+    --color-sucess: #40eb87;
+    --color-danger: #f54141;
+    --color-dark: #1a273b;
+    --color-black: #151b27;
+    --color-white: #fff;
+    --color-light: #f0eef6;
+    --color-gray: #98a4b3;
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.5rem 2rem;
+    --search-padding: 0.5rem 1rem;
+    --card-padding: 1rem;
+
+    --transition: all 0.3s ease-in-out;
+}
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-darkk);
+    background-color: var(--color-light);
+    overflow-x: hidden;
+}
+
+/*==========GENERAL STYLES===============*/
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.profile-photo{
+    width: calc(16px * 3);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.btn{
+    display: inline-block;
+    padding: var(--btn-padding);
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    font-family: inherit;
+    background-color: var(--color-dark);
+    font-weight: 500;
+    transition: var(--transition);
+    cursor: pointer;
+    color: var(--color-white)
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-primary{
+    background-color: var(--color-primary);
+}
+
+.text-muted{
+    color: var(--color-gray);
+}
+
+
+/*============NAV AREA==========*/
+
+nav{
+    background-color: var(--color-white);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem ;
+    align-items: center;
+}
+
+.search_bar{
+    background-color: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: var(--search-padding);
+}
+
+.search_bar input[type="search"]{
+    background-color: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+    font-family: inherit;
+}
+
+.search_bar input[type="search"]::placeholder{
+    color: var(--color-gray);
+}
+
+.create{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*=========MAIN============*/
+
+/*=========Profile================*/
+
+main{
+    margin-top: 5.5rem;
+    position: relative;
+}
+
+main .container{
+    display: grid;
+    grid-template-columns: 20vw auto 20vw;
+}
+
+/*=======Profile============*/
+
+main .container .left .profile{
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    gap: 1rem;
+    padding: var(--card-padding);
+}
+
+main .container .left .sidebar{
+    background-color: var(--color-white);
+    margin-top: 1.5rem;
+    border-radius: var(--card-border-radius);
+}
+
+main .container .left .sidebar ul li a{
+    display: flex;
+    gap: 1.2rem;
+    height: 4rem;
+    align-items: center;
+    transition: var(--transition);
+    padding-left: 2rem;
+}
+
+main .container .left .sidebar ul li a:hover{
+    background-color: var(--color-light);
+}
+
+main .container .left .sidebar ul li a i{
+    font-size: 1.4rem;
+    color: var(--color-gray);
+    position: relative;
+
+}
+
+main .container .left .sidebar ul li a i .count {
+    width: fit-content;
+    color: var(--color-white);
+    background-color: var(--color-danger);
+    border-radius:0.8rem;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -14px;
+    right: -12px;
+    padding: 0.1rem 0.4rem;
+}
