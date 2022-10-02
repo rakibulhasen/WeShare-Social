@@ -481,6 +481,120 @@ main .middle .story .profile-photo{
 
 
 
+/*================END FRIENT REQUESTS==============*/
+
+
+/*================FOR LAPTOP==============*/
+
+@media screen and (max-width: 1400px) {
+    .container{
+        max-width: 88%;
+    }
+}
+
+/*================SMALL LAPTOP==============*/
+@media screen and (max-width: 1324px) {
+    .container{
+        max-width: 96%;
+
+    }
+    main .container{
+        grid-template-columns: 18vw auto 24vw;
+    }
+}
+
+/*================SMALL LAPTOP==============*/
+@media screen and (max-width: 1280px) {
+    main .container{
+        grid-template-columns: 5vw auto 32vw;
+    }
+    
+    main .container .left .profile{
+        display: none;
+    }
+
+    main .container .left .btn{
+        display: none;
+    }
+
+    main .container .left .sidebar{
+        margin: 0;
+    }
+
+    main .container .left .sidebar h3{
+        display: none;
+    }
+
+    main .container .left .sidebar ul li a{
+       padding: 0;
+       justify-content: center;
+    }
+
+}
+
+/*================SMALL LAPTOP==============*/
+@media screen and (max-width: 998px) {
+    nav .search_bar{
+        display: none;
+    }
+    main .container{
+        max-width: 94%;
+    }
+    main .container{
+        grid-template-columns: 9vw auto 0vw;
+        gap: 0;
+    }
+
+    main .left{
+        margin-right: 5px;
+    }
+
+    main .right{
+        display: none;
+    }
+    
+}
+/*================SMALL LAPTOP==============*/
+@media screen and (max-width: 600px) {
+    main .container{
+        grid-template-columns: 1fr;
+    }
+
+    main .container .middle{
+        margin-right: 3rem;
+        width: 100%;
+    }
+
+    main .container .left{
+        position: fixed;
+        right: 0;
+        top: 19rem;
+        z-index: 90;
+        width:3rem;
+    }
+
+    main .middle .stories .story:nth-child(4){
+        display: none;
+    }
+    main .middle .stories .story:nth-child(5){
+        display: none;
+    }
+    main .middle .stories .story:nth-child(6){
+        display: none;
+    }
+
+    main .container {
+        display: block;
+    }
+
+    .btn{
+        padding: 7px 11px;
+        font-size: 13px;
+    }
+}
+
+
+
 
 
 
